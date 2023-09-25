@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Google Advanced Search</title>
+  <link href="advanced.css" rel="stylesheet" type="text/css" />
+  <script src='script.js'></script>
+</head>
+  
+<body>
+  
+  <!-- Header -->
+  <header>
+    
+    <!-- Logo -->
+    <nav>
+      <ul>
+        <li><a href='index.html'><img height='25' width='75' alt='google logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'></a></li>
+      </ul>
+    </nav>
+    
+    <!-- Right Links -->
+    <nav>
+      <ul>
+        <li><a href='images.html'>Images</a></li>
+        <li><img width='15' height='15' alt='9 dots' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/9dots.svg/220px-9dots.svg.png'></li>
+        <li id='signin' onclick='signIn()'>Sign in</li>
+      </ul>
+    </nav>
+    
+  </header>
+  
+  <!-- Title -->
+  <h1>Advanced Search</h1>
+  
+  <!-- Contains advanced search inputs -->
+  <main>
+    
+    <!-- Contains 1st article of inputs -->
+    <article>
+      
+      <!-- Form Header -->
+      <section>
+        <h2>Find pages with...</h2><p></p><p>To do this in the search box</p>
+      </section>
+      
+      <!-- Sections containing: label tag -> input tag -> p tag -->
+      <section>
+        <label for='important'>all these words:</label>
+        <input id='important' type='text'>
+        <p>Type the important words: <mark>tricolor rat terrier</mark></p>
+      </section>
+      
+      <section>
+        <label for='exact'>this exact word or phrase:</label>
+        <input id='exact'type='text'>
+        <p>Put exact words in quotes: <mark>"rat terrier"</mark></p>
+      </section>
+      
+      <section>
+        <label for='or'>any of these words:</label>
+        <input id='or' type='text'>
+        <p>Type OR between all the words you want: <mark>miniature or standard</mark></p>
+      </section>
+      
+      <section>
+        <label for='minus'>none of these words:</label>
+        <input id='minus' type='text'>
+        <p>Put a minus sign just before words you don't want:  <mark>-rodent, -"Jack Russell"</mark></p>
+      </section>
+      
+      <section>
+        <p>numbers ranging from:</p>
+        <!-- Span container for 2 input tags -->
+        <span>
+          <input id='range1'class='num'type='number'>
+          &nbsp&nbspto&nbsp&nbsp
+          <input id='range2'class='num'type='number'>
+        </span>
+        <p>Put 2 periods between the numbers and add a unit of measure: <mark>10..35 lb, $300..$500, 2010..2011</mark></p>
+      </section>
+      
+    </article>
+    
+    <!-- Contains 2nd article of inputs -->
+    <article>
+      
+      <h2>Then narrow your results by...</h2>
+      
+      <section>
+        <label for='site'>site or domain: </label>
+        <input id='site' type='text'>
+        <p>Search one site (like <mark>wikipedia.org</mark> ) or limit your results to a domain like <mark>.edu, .org or .gov</mark></p>
+      </section>
+      
+      <!-- Search button -->
+      <input id='adSearch' type='button' value='Advanced Search' onclick='advancedSearch()'>
+      
+    </article>
+    
+  </main>
+  
+  <footer>
+    <!-- Placeholder to hold the elements above up -->
+  </footer>
+  
+</body>
+  
+</html>

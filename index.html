@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Google</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src='script.js'></script>
+</head>
+  
+<body>
+  
+  <!-- Header -->
+  <header>
+    
+    <!-- Left Nav Bar -->
+    <nav>
+      <ul>
+        <li><a href='https://about.google/'>About</a></li>
+        <li><a href='https://store.google.com/'>Store</a></li>
+        <li><a href='advanced.html'>Advanced</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Right Nav Bar -->
+    <nav>
+      <ul>
+        <li><a href='https://gmail.com'>Gmail</a></li>
+        <li><a href='images.html'>Images</a></li>
+        <li><img width='15' height='15' alt='9 dots' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/9dots.svg/220px-9dots.svg.png'></li>
+        <!-- Prompts user to enter username when clicked -->
+        <li id='signin' onclick='signIn()'>Sign in</li>
+      </ul>
+    </nav>
+    
+  </header>
+  
+  <!-- Main contains logo, search bar and buttons -->
+  <main>
+    
+    <!-- Logo -->
+    <img height='100' width='300' alt='google logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'>
+    
+    <!-- Contains logo and search bar -->
+    <section class='search'>
+      <img width='25' height='25' alt='magnifying glass' src='https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png'>
+      <!-- Search bar -->
+      <input id='searchBar' type='text' >
+    </section>
+    
+    <!-- Contains buttons -->
+    <section>
+      <!-- Opens an alert and opens the google search -->
+      <input type='submit' value='Google Search' onclick='search()'>
+      <input id='lucky' type='submit' value="I'm Feeling Lucky" onclick='lucky()'>
+    </section>
+    
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    
+    <!-- Left links -->
+    <section>
+      <ul>
+       <li><a href='https://ads.google.com/home/'>Advertising</a></li>
+       <li><a href='https://smallbusiness.withgoogle.com/'>Business</a></li>
+       <li><a href='https://www.google.com/search/howsearchworks/?fg=1'>How Search Works</a></li>
+      </ul>
+    </section>
+    
+    <!-- Middle Link -->
+    <section>
+      <ul>
+        <li>
+          <a href='https://sustainability.google/'>
+          <img width='15' height='15' alt='leaf' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC'>
+          Our third decade of climate action: join us</a>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Right Links -->
+    <section>
+      <ul>
+       <li><a href='https://policies.google.com/privacy?hl=en&fg=1'>Privacy</a></li>
+       <li><a href='https://policies.google.com/terms?hl=en&fg=1'>Terms</a></li>
+       <li><a href=''>Settings</a></li>
+      </ul>
+    </section>
+    
+  </footer>
+  
+</body>
+  
+</html>
